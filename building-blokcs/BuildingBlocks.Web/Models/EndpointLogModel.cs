@@ -1,0 +1,28 @@
+namespace BuildingBlocks.Web.Models;
+
+public record EndpointLogModel(
+    string Provider,
+    string Uri,
+    string HttpMethod,
+    string RequestPayload,
+    string RequestHeaders,
+    int Status,
+    string ResponsePayload,
+    string ResponseHeaders,
+    long ResponseTime,
+    string CreatedBy,
+    DateTime CreatedDate,
+    string LastModifiedBy,
+    DateTime LastModifiedDate,
+    string UserId,
+    string ErrMsg,
+    string ErrCode,
+    string Success,
+    string CorrelationId,
+    string TransactionId,
+    DateTime ClientCreateTime,
+    string DeviceId,
+    string ClientIp,
+    string UserAgent,
+    string AppRegion,
+    string AppZone);

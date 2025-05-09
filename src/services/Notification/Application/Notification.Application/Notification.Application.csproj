@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\..\..\building-blokcs\BuildingBlocks.Caching\BuildingBlocks.Caching.csproj" />
+		<ProjectReference Include="..\..\..\..\..\building-blokcs\BuildingBlocks.Integration.MassTransit\BuildingBlocks.Integration.MassTransit.csproj" />
+		<ProjectReference Include="..\..\..\..\..\building-blokcs\BuildingBlocks.Logging\BuildingBlocks.Logging.csproj" />
+		<ProjectReference Include="..\..\..\..\..\building-blokcs\BuildingBlocks.Web\BuildingBlocks.Web.csproj" />
+		<ProjectReference Include="..\..\Core\Notification.Domain\Notification.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Azure.Identity" Version="1.13.2" />
+		<PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.1" />
+		<PackageReference Include="Npgsql" Version="8.0.6" />
+		<PackageReference Include="System.Text.Json" Version="8.0.5" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Azure.Identity" Version="1.13.2" />
+		<PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.1" />
+		<PackageReference Include="Npgsql" Version="8.0.6" />
+		<PackageReference Include="Polly" Version="8.5.2" />
+		<PackageReference Include="System.Text.Json" Version="8.0.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\..\..\building-blokcs\BuildingBlocks.HealthCheck\BuildingBlocks.HealthCheck.csproj" />
+		<ProjectReference Include="..\..\..\..\..\building-blokcs\BuildingBlocks.Integration.MassTransit\BuildingBlocks.Integration.MassTransit.csproj" />
+		<ProjectReference Include="..\..\..\..\..\building-blokcs\BuildingBlocks.Messaging.Persistence.Postgres\BuildingBlocks.Messaging.Persistence.Postgres.csproj" />
+		<ProjectReference Include="..\..\..\..\..\building-blokcs\BuildingBlocks.Swagger\BuildingBlocks.Swagger.csproj" />
+		<ProjectReference Include="..\..\..\Shared\Beymen.ECommSuite.Shared\Beymen.ECommSuite.Shared.csproj" />
+		<ProjectReference Include="..\..\Application\Notification.Application\Notification.Application.csproj" />
+	</ItemGroup>
+
+</Project>
